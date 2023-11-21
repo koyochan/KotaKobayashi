@@ -8,6 +8,7 @@
 }
 
 body {
+  background-color: rgb(180, 178, 178);
   font-family: "Poppins", sans-serif;
 }
 
@@ -16,7 +17,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(246, 245, 245);
 }
 
 /* TRANSITION */
@@ -78,9 +79,12 @@ a:hover {
 }
 
 .large-icon {
-  height: 5.5rem;  /* 既存のアイコンよりも大きく設定 */
-  width: 10rem;   /* 幅も高さと同じに設定 */
-  cursor: pointer;  /* カーソルをポインターに設定 */
+  height: 5.5rem;
+  /* 既存のアイコンよりも大きく設定 */
+  width: 10rem;
+  /* 幅も高さと同じに設定 */
+  cursor: pointer;
+  /* カーソルをポインターに設定 */
   /* その他必要なスタイルがあれば追加 */
 }
 
