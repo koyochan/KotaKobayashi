@@ -20,6 +20,10 @@ p {
   color: rgb(246, 245, 245);
 }
 
+p a {
+  color: rgb(6, 6, 6);
+}
+
 /* TRANSITION */
 
 a,
@@ -38,6 +42,13 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+}
+
+.nav-works {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  font-size: 3rem;
 }
 
 .nav-links {
@@ -171,6 +182,11 @@ section {
   display: flex;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* PROFILE SECTION */
 
 #profile {
@@ -201,6 +217,18 @@ section {
 }
 
 .section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.section__text__p2_left {
+  text-align: left;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.section__text__p2_right {
+  text-align: right;
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
