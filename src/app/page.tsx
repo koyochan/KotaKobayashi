@@ -1,3 +1,5 @@
+"use client";
+
 import { Navbar } from '@/components/navbar'
 import { Profile } from '@/components/profile'
 import { About } from '@/components/about'

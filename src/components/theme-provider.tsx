@@ -1,5 +1,3 @@
-"use client";
-
 import { ThemeProvider as NextThemesProvider, ThemeProviderProps } from "next-themes";
 import { ReactNode } from "react";
 

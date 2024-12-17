@@ -1,7 +1,6 @@
-"use client"
-
-import Image from 'next/image'
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from "next/image";
+import Link from "next/link";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export function About() {
   return (
@@ -9,6 +8,7 @@ export function About() {
       <h2 className="text-3xl font-bold text-center mb-8">About Me</h2>
       <div className="grid md:grid-cols-2 gap-8">
         <div className="space-y-4">
+          {/* Studying Languages */}
           <Card>
             <CardHeader>
               <CardTitle>Studying Languages</CardTitle>
@@ -17,15 +17,32 @@ export function About() {
               <p>C, Go, Python, HTML, CSS</p>
             </CardContent>
           </Card>
+
+          {/* Education */}
           <Card>
             <CardHeader>
               <CardTitle>Education</CardTitle>
             </CardHeader>
             <CardContent>
-              <Image src="/assets/42Tokyo.png" alt="42Tokyo" width={200} height={100} onClick={() => window.open('https://42tokyo.jp/', '_blank')} className="cursor-pointer" />
+              {/* Next.js Link に置き換え */}
+              <Link
+                href="https://42tokyo.jp/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/assets/42Tokyo.png"
+                  alt="42Tokyo"
+                  width={200}
+                  height={100}
+                  className="cursor-pointer"
+                />
+              </Link>
             </CardContent>
           </Card>
         </div>
+
+        {/* Description */}
         <Card>
           <CardContent className="pt-6">
             <p>
@@ -41,5 +58,5 @@ export function About() {
         </Card>
       </div>
     </section>
-  )
+  );
 }

@@ -1,8 +1,7 @@
-"use client"
-
-import Image from 'next/image'
-import { Button } from "@/components/ui/button"
-import { Instagram, Twitter, Linkedin, Github } from 'lucide-react'
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Instagram, Twitter, Linkedin, Github } from "lucide-react";
 
 export function Profile() {
   return (
@@ -12,28 +11,36 @@ export function Profile() {
       </div>
       <div className="text-center md:text-left">
         <p className="text-lg mb-2">Hello, I'm</p>
-        <h1 className="text-4xl font-bold mb-2">kota san</h1>
+        <h1 className="text-4xl font-bold mb-2">kota</h1>
         <p className="text-xl mb-4">student of 42Tokyo</p>
         <div className="flex justify-center md:justify-start space-x-4 mb-4">
-          <Button onClick={() => window.location.href = '/#contact'}>
-            Contact Info
-          </Button>
+          <Link href="/#contact">
+            <Button>Contact Info</Button>
+          </Link>
         </div>
         <div className="flex justify-center md:justify-start space-x-4">
-          <Button variant="ghost" size="icon" onClick={() => window.open('https://www.instagram.com/kotachan0920/', '_blank')}>
-            <Instagram className="h-6 w-6" />
-          </Button>
-          <Button variant="ghost" size="icon" onClick={() => window.open('https://twitter.com/huhkoyo', '_blank')}>
-            <Twitter className="h-6 w-6" />
-          </Button>
-          <Button variant="ghost" size="icon" onClick={() => window.open('https://www.linkedin.com/in/kotachan/', '_blank')}>
-            <Linkedin className="h-6 w-6" />
-          </Button>
-          <Button variant="ghost" size="icon" onClick={() => window.open('https://github.com/koyochan/', '_blank')}>
-            <Github className="h-6 w-6" />
-          </Button>
+          <a href="https://www.instagram.com/kotachan0920/" target="_blank" rel="noopener noreferrer">
+            <Button variant="ghost" size="icon">
+              <Instagram className="h-6 w-6" />
+            </Button>
+          </a>
+          <a href="https://twitter.com/huhkoyo" target="_blank" rel="noopener noreferrer">
+            <Button variant="ghost" size="icon">
+              <Twitter className="h-6 w-6" />
+            </Button>
+          </a>
+          <a href="https://www.linkedin.com/in/kotachan/" target="_blank" rel="noopener noreferrer">
+            <Button variant="ghost" size="icon">
+              <Linkedin className="h-6 w-6" />
+            </Button>
+          </a>
+          <a href="https://github.com/koyochan/" target="_blank" rel="noopener noreferrer">
+            <Button variant="ghost" size="icon">
+              <Github className="h-6 w-6" />
+            </Button>
+          </a>
         </div>
       </div>
     </section>
-  )
+  );
 }
