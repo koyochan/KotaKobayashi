@@ -31,12 +31,15 @@ export function About() {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src="/assets/42Tokyo.png"
-                  alt="42Tokyo"
-                  width={200}
-                  height={100}
-                  className="cursor-pointer"
-                />
+  src="/assets/42Tokyo.png"
+  alt="42Tokyo"
+  width={0} // 自動計算に必要な初期値
+  height={0} // 自動計算に必要な初期値
+  sizes="100vw" // レスポンシブ対応
+  style={{ width: "auto", height: "100px" }} // 高さ固定、幅は自動調整
+  className="cursor-pointer"
+  priority
+/>  
               </Link>
             </CardContent>
           </Card>

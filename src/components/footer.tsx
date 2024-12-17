@@ -12,7 +12,7 @@ export function Footer() {
             <li><Link href="#contact" className="hover:underline">Contact</Link></li>
           </ul>
         </nav>
-        <p className="text-center text-sm">Copyright © 2023 Kota Kobayashi. All Rights Reserved.</p>
+        <p className="text-center text-sm">Copyright © 2024 Kota Kobayashi. All Rights Reserved.</p>
       </div>
     </footer>
   )
