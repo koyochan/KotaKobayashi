@@ -12,7 +12,7 @@ import { Menu } from 'lucide-react'
 export function Navbar() {
   return (
     <nav className="flex justify-between items-center p-4">
-      <div className="text-2xl font-bold">tautisan</div>
+      <div className="text-2xl font-bold">Kota</div>
       <div className="hidden md:flex space-x-4">
         <Button variant="ghost" asChild>
           <Link href="#about">About</Link>
